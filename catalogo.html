@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CATÁLOGO</title>
+
+  <link rel="stylesheet" href="css/zafiri.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/0b7406c3-cbb5-48ab-ab16-9ce8b9cb9299lofozafiri.png" alt="Logo Zafiri">
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="quienes-somos.html">QUIÉNES SOMOS</a></li>
+        <li><a href="nuevo.html">NUEVO</a></li>
+        <li><a href="catalogo.html" class="activo">CATÁLOGO</a></li>
+        <li><a href="colecciones.html">COLECCIONES</a></li>
+        <li><a href="personaliza.html">PERSONALIZA</a></li>
+        <li><a href="sedes.html">SEDES</a></li>
+        <li><a href="contactos.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+
+    <!-- Ícono del carrito -->
+    <div class="carrito-icono" id="abrirCarrito">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span id="contador">0</span>
+    </div>
+  </header>
+
+  <section class="catalogo">
+    <h2>NUESTRO CATÁLOGO</h2>
+    <p>Descubre nuestras piezas exclusivas diseñadas para resaltar tu elegancia y estilo.</p>
+
+    <div class="grid">
+      <!-- ==== TODOS LOS PRODUCTOS ==== -->
+      <div class="producto">
+        <img src="img/anillo3.jpg" alt="Anillo Corazón de Luz">
+        <h3>Anillo Corazón de Luz</h3>
+        <p>$460.000</p>
+        <button class="boton comprar" data-nombre="Anillo Corazón de Luz" data-precio="460000" data-img="img/anillo3.jpg">Comprar</button>
+      </div>
+
+      <div class="producto">
+        <img src="img/collar1.jpg" alt="Collar Plata Fina">
+        <h3>Collar Plata Fina</h3>
+        <p>$95.000</p>
+        <button class="boton comprar" data-nombre="Collar Plata Fina" data-precio="95000" data-img="img/collar1.jpg">Comprar</button>
+      </div>
+
+      <div class="producto">
+        <img src="img/anillo1.jpg" alt="Anillo Elegancia Azul">
+        <h3>Anillo Elegancia Azul</h3>
+        <p>$110.000</p>
+        <button class="boton comprar" data-nombre="Anillo Elegancia Azul" data-precio="110000" data-img="img/anillo1.jpg">Comprar</button>
+      </div>
+
+      <div class="producto">
+        <img src="img/pulsera1.jpg" alt="Pulsera Dorada">
+        <h3>Pulsera Dorada</h3>
+        <p>$80.000</p>
+        <button class="boton comprar" data-nombre="Pulsera Dorada" data-precio="80000" data-img="img/pulsera1.jpg">Comprar</button>
+      </div>
+
+      <div class="producto">
+        <img src="img/aretes2.jpg" alt="Aretes Dorados Luz">
+        <h3>Aretes Dorados Luz</h3>
+        <p>$135.000</p>
+        <button class="boton comprar" data-nombre="Aretes Dorados Luz" data-precio="135000" data-img="img/aretes2.jpg">Comprar</button>
+      </div>
+
+      <div class="producto">
+        <img src="img/collarrealzafiro.jpeg" alt="Collar Real Zafiro">
+        <h3>Collar Real Zafiro</h3>
+        <p>$145.000</p>
+        <button class="boton comprar" data-nombre="Collar Real Zafiro" data-precio="145000" data-img="img/collarrealzafiro.jpeg">Comprar</button>
+      </div>
+
+      <div class="producto">
+        <img src="img/collarrubi.jpg" alt="Collar de rubi">
+        <h3>Collar de rubi</h3>
+        <p>$220.000</p>
+        <button class="boton comprar" data-nombre="Collar de rubi" data-precio="220000" data-img="img/collarrubi.jpg">Comprar</button>
+      </div>
+
+      <div class="producto">
+        <img src="img/aretasdiamanteverde.jpg" alt="Aretas de diamante verde">
+        <h3>Aretas de diamante verde</h3>
+        <p>$320.000</p>
+        <button class="boton comprar" data-nombre="Aretas de diamante verde" data-precio="320000" data-img="img/aretasdiamanteverde.jpg">Comprar</button>
+      </div>
+
+      <div class="producto">
+        <img src="img/collardiamanteverde.avif" alt="Collar diamante verde">
+        <h3>Collar diamante verde</h3>
+        <p>$280.000</p>
+        <button class="boton comprar" data-nombre="Collar diamante verde" data-precio="280000" data-img="img/collardiamanteverde.avif">Comprar</button>
+      </div>
+
+      <div class="producto">
+        <img src="img/pulseradezafiro1.jpeg" alt="Pulsera de zafiro">
+        <h3>Pulsera de zafiro</h3>
+        <p>$450.000</p>
+        <button class="boton comprar" data-nombre="Pulsera de zafiro" data-precio="450000" data-img="img/pulseradezafiro1.jpeg">Comprar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== PANEL DEL CARRITO ==== -->
+  <div class="carrito-panel" id="carritoPanel">
+    <h3>🛒 Tu carrito</h3>
+    <div id="itemsCarrito"></div>
+
+    <div class="carrito-total">
+      <strong>Total:</strong> <span id="total">$0</span>
+    </div>
+
+    <div class="carrito-botones">
+      <button id="vaciar">Vaciar</button>
+      <button id="pagar">Pagar</button>
+      <button id="cerrarCarrito">Cerrar</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-bottom">
+      <p>© 2025 ZAFIRI Joyas. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const botones = document.querySelectorAll('.comprar');
+    const carritoPanel = document.getElementById('carritoPanel');
+    const abrirCarrito = document.getElementById('abrirCarrito');
+    const cerrarCarrito = document.getElementById('cerrarCarrito');
+    const vaciar = document.getElementById('vaciar');
+    const pagar = document.getElementById('pagar');
+    const itemsCarrito = document.getElementById('itemsCarrito');
+    const total = document.getElementById('total');
+    const contador = document.getElementById('contador');
+    let carrito = [];
+
+    botones.forEach(boton => {
+      boton.addEventListener('click', () => {
+        const nombre = boton.dataset.nombre;
+        const precio = parseInt(boton.dataset.precio);
+        const img = boton.dataset.img;
+        const item = carrito.find(p => p.nombre === nombre);
+        if (item) item.cantidad++;
+        else carrito.push({ nombre, precio, img, cantidad: 1 });
+        actualizarCarrito();
+        carritoPanel.classList.add('mostrar');
+      });
+    });
+
+    abrirCarrito.addEventListener('click', () => carritoPanel.classList.add('mostrar'));
+    cerrarCarrito.addEventListener('click', () => carritoPanel.classList.remove('mostrar'));
+    vaciar.addEventListener('click', () => { carrito = []; actualizarCarrito(); });
+    pagar.addEventListener('click', () => {
+      if (!carrito.length) return alert("Tu carrito está vacío");
+      alert("Gracias por tu compra");
+      carrito = [];
+      actualizarCarrito();
+      carritoPanel.classList.remove('mostrar');
+    });
+
+    function actualizarCarrito() {
+      itemsCarrito.innerHTML = '';
+      let totalCompra = 0;
+      carrito.forEach((item, i) => {
+        totalCompra += item.precio * item.cantidad;
+        const div = document.createElement('div');
+        div.classList.add('item-carrito');
+        div.innerHTML = `
+          <img src="${item.img}" alt="${item.nombre}">
+          <div class="info">
+            <h4>${item.nombre}</h4>
+            <p>$${item.precio.toLocaleString()}</p>
+            <div class="cantidad">
+              <button class="menos" data-i="${i}">-</button>
+              <span>${item.cantidad}</span>
+              <button class="mas" data-i="${i}">+</button>
+              <span class="sub">$${(item.precio * item.cantidad).toLocaleString()}</span>
+            </div>
+          </div>`;
+        itemsCarrito.appendChild(div);
+      });
+
+      total.textContent = `$${totalCompra.toLocaleString()}`;
+      contador.textContent = carrito.reduce((s, p) => s + p.cantidad, 0);
+
+      itemsCarrito.querySelectorAll('.mas').forEach(btn => {
+        btn.addEventListener('click', () => { carrito[btn.dataset.i].cantidad++; actualizarCarrito(); });
+      });
+      itemsCarrito.querySelectorAll('.menos').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const i = btn.dataset.i;
+          carrito[i].cantidad--;
+          if (carrito[i].cantidad <= 0) carrito.splice(i, 1);
+          actualizarCarrito();
+        });
+      });
+    }
+  </script>
+</body>
+</html>
